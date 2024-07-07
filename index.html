@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <link rel="stylesheet" href="../css/estilos-form.css">
+    <link rel="stylesheet" href="./css/flexbox.css" />
+    <title>AluraGeek</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="encabezado">
+        <a></a>
+          <h2 class="buscar__input">
+            AluraGeek
+          </h2>
+        </div>
+
+        <div class="encabezado__iconos">
+        </div>
+      </nav>
+    </header>
+    <div class="container-lista">
+      <h2 class="titulo__container">MIS PRODUCTOS:</h2>
+      <ul class="videos__container" alt="videos alura" data-lista></ul>
+    </div>
+    <div class="container-form">
+      <form class="container__formulario" data-formulario>
+        <h2 class="formulario__titulo">AGREGAR PRODUCTO:</h2>
+            <div class="formulario__campo">
+                <input name="url" class="campo__escrita" required
+                    placeholder="Nombre..." id='url' data-nombre/>
+            </div>
+
+            <div class="formulario__campo">
+                <input name="titulo" class="campo__escrita" required placeholder="precio..."
+                    id='titulo' data-precio/>
+            </div>
+
+            <div class="formulario__campo">
+                <input name="imagem" class="campo__escrita" required placeholder="Imagen..."
+                    id='imagem' data-imagen/>
+            </div>
+
+            <input class="formulario__boton" type="submit" />
+    </form>
+    </div>
+
+    <script src="./js/mostrarProducto.js" type="module"></script>
+    <script src="/js/crearProducto.js " type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+  --azul-escuro: #154580;
+  --azul-medio: #3970be;
+  --azul-claro: #e5f1ff;
+  --cinza-texto: #444444;
+  --cinza-claro: #ececec;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", system-ui;
+  background-color: var(--azul-claro);
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  font-size: 14px;
+  color: white;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+}
+
+/* ESTILOS DO HEADER */
+
+.encabezado {
+  background-color: rgba(83, 0, 200, 1);
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  z-index: 2;
+}
+
+.container-lista {
+  width: 70%;
+}
+
+.container-form {
+  width: 30%;
+}
+
+li {
+  margin: 1em;
+  background-color: rgba(83, 0, 200, 1);
+  color: white;
+  border-radius: 1em;
+}
+
+/* ESTILOS DA SEÇÃO VÍDEOS */
+
+.titulo__container {
+  color: black;
+  margin-top: 20px;
+}
+
+.videos__container {
+  color: black;
+}
+
+.mensaje {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.mensaje__imagen {
+  width: 30%;
+}
+
+.mensaje__titulo {
+  color: var(--azul-medio);
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.buscar__input {
+  width: 260px;
+  height: 32px;
+  font-size: 16px;
+  padding: 3px 8px;
+  color: white;
+}
+
+.buscar__boton {
+  background-image: url(../img/encabezado/search.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid rgb(211, 211, 211);
+  background-color: #f9f9f9;
+  border-left: none;
+  padding: 15px 15px;
+  cursor: pointer;
+}
+
+.encabezado__buscar {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 834px) {
+  body {
+    height: 100vh;
+  }
+}
